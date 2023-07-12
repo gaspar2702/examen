@@ -1,0 +1,609 @@
+def menu():
+  compradores = []
+  while True:
+    print("""Bienvenido a la aplicacion de casa feliz inmoviliara
+        para usted y su familia
+        porfavor elija la opcion del menú que desea realizar""")
+    print("1. comprar departamento")
+    print("2. mostrar departamentos disponibles")
+    print("3. ver listado de compradores")
+    print("4. mostrar ganancias totales")
+    print("5. salir del programa")
+
+    try:
+
+      ventastotales = 0
+      choice = int(input("porfavor ingrese un valor de 1 a 5: \n"))
+      if choice == 1:
+        piso = int(input("porfavor escriba el piso donde desea comprar"))
+        if piso == 1:
+          depa1 = str(input("ingrese la clase de departamento"))
+          if depa1 == "A" or depa1 == "a":
+            if departamento1[0] == "X":
+              print("departamento ya comprado")
+              print(departamento1)
+            else:
+              print("departamento comprado con exito")
+              departamento1.pop(0)
+              departamento1.insert(0, "X")
+              print(departamento1)
+              ventastotales = ventastotales + 38000
+              comprador = int(
+                  input("ingrese su rut sin punto ni digito berificador"))
+              compradores.append(comprador)
+          elif depa1 == "B" or depa1 == "b":
+            if departamento1[1] == "X":
+              print("departamento ya comprado")
+              print(departamento1)
+            else:
+              print("departamento comprado con exito")
+              departamento1.pop(1)
+              departamento1.insert(1, "X")
+              ventastotales = ventastotales + 3000
+              comprador = int(
+                  input("ingrese su rut sin punto ni digito berificador"))
+              compradores.append(comprador)
+          elif depa1 == "C" or depa1 == "c":
+            if departamento1[2] == "X":
+              print("departamento ya comprado")
+              print(departamento1)
+            else:
+              print("departamento comprado con exito")
+              departamento1.pop(2)
+              departamento1.insert(2, "X")
+              print(departamento1)
+              ventastotales = ventastotales + 2800
+              comprador = int(
+                  input("ingrese su rut sin punto ni digito berificador"))
+              compradores.append(comprador)
+          elif depa1 == "D" or depa1 == "d":
+            if departamento1[3] == "X":
+              print("departamento ya comprado")
+              print(departamento1)
+            else:
+              print("departamento comprado con exito")
+              departamento1.pop(3)
+              departamento1.insert(3, "X")
+              print(departamento1)
+              ventastotales = ventastotales + 3500
+              comprador = int(
+                  input("ingrese su rut sin punto ni digito berificador"))
+              compradores.append(comprador)
+          else:
+            print("valor no valido, intentelo otra vez")
+        elif piso == 2:
+          depa2 = str(input("ingrese la clase de departamento"))
+          if depa2 == "A" or depa2 == "a":
+            if departamento2[0] == "X":
+              print("departamento ya comprado")
+              print(departamento2)
+            else:
+              print("departamento comprado con exito")
+              departamento2.pop(0)
+              departamento2.insert(0, "X")
+              print(departamento2)
+              ventastotales = ventastotales + 38000
+              comprador = int(
+                  input("ingrese su rut sin punto ni digito berificador"))
+              compradores.append(comprador)
+          elif depa2 == "B" or depa2 == "b":
+            if departamento2[1] == "X":
+              print("departamento ya comprado")
+              print(departamento2)
+            else:
+              print("departamento comprado con exito")
+              departamento2.pop(1)
+              departamento2.insert(1, "X")
+              ventastotales = ventastotales + 3000
+              comprador = int(
+                  input("ingrese su rut sin punto ni digito berificador"))
+              compradores.append(comprador)
+          elif depa2 == "C" or depa2 == "c":
+            if departamento2[2] == "X":
+              print("departamento ya comprado")
+              print(departamento2)
+            else:
+              print("departamento comprado con exito")
+              departamento2.pop(2)
+              departamento2.insert(2, "X")
+              print(departamento2)
+              ventastotales = ventastotales + 2800
+              comprador = int(
+                  input("ingrese su rut sin punto ni digito berificador"))
+              compradores.append(comprador)
+          elif depa2 == "D" or depa2 == "d":
+            if departamento2[3] == "X":
+              print("departamento ya comprado")
+              print(departamento2)
+            else:
+              print("departamento comprado con exito")
+              departamento2.pop(3)
+              departamento2.insert(3, "X")
+              print(departamento2)
+              ventastotales = ventastotales + 3500
+              comprador = int(
+                  input("ingrese su rut sin punto ni digito berificador"))
+              compradores.append(comprador)
+          else:
+            print("valor no valido, intentelo otra vez")
+        elif piso == 3:
+          depa3 = str(input("ingrese la clase de departamento"))
+          if depa3 == "A" or depa3 == "a":
+            if departamento3[0] == "X":
+              print("departamento ya comprado")
+              print(departamento3)
+            else:
+              print("departamento comprado con exito")
+              departamento3.pop(0)
+              departamento3.insert(0, "X")
+              print(departamento3)
+              ventastotales = ventastotales + 38000
+              comprador = int(
+                  input("ingrese su rut sin punto ni digito berificador"))
+              compradores.append(comprador)
+          elif depa3 == "B" or depa3 == "b":
+            if departamento3[1] == "X":
+              print("departamento ya comprado")
+              print(departamento3)
+            else:
+              print("departamento comprado con exito")
+              departamento3.pop(1)
+              departamento3.insert(1, "X")
+              ventastotales = ventastotales + 3000
+              comprador = int(
+                  input("ingrese su rut sin punto ni digito berificador"))
+              compradores.append(comprador)
+          elif depa3 == "C" or depa3 == "c":
+            if departamento3[2] == "X":
+              print("departamento ya comprado")
+              print(departamento3)
+            else:
+              print("departamento comprado con exito")
+              departamento3.pop(2)
+              departamento3.insert(2, "X")
+              print(departamento2)
+              ventastotales = ventastotales + 2800
+              comprador = int(
+                  input("ingrese su rut sin punto ni digito berificador"))
+              compradores.append(comprador)
+          elif depa3 == "D" or depa3 == "d":
+            if departamento3[3] == "X":
+              print("departamento ya comprado")
+              print(departamento3)
+            else:
+              print("departamento comprado con exito")
+              departamento3.pop(3)
+              departamento3.insert(3, "X")
+              print(departamento3)
+              ventastotales = ventastotales + 3500
+              comprador = int(
+                  input("ingrese su rut sin punto ni digito berificador"))
+              compradores.append(comprador)
+          else:
+            print("valor no valido, intentelo otra vez")
+        elif piso == 4:
+          depa4 = str(input("ingrese la clase de departamento"))
+          if depa4 == "A" or depa4 == "a":
+            if departamento4[0] == "X":
+              print("departamento ya comprado")
+              print(departamento4)
+            else:
+              print("departamento comprado con exito")
+              departamento4.pop(0)
+              departamento4.insert(0, "X")
+              print(departamento4)
+              ventastotales = ventastotales + 38000
+              comprador = int(
+                  input("ingrese su rut sin punto ni digito berificador"))
+              compradores.append(comprador)
+          elif depa4 == "B" or depa4 == "b":
+            if departamento4[1] == "X":
+              print("departamento ya comprado")
+              print(departamento4)
+            else:
+              print("departamento comprado con exito")
+              departamento4.pop(1)
+              departamento4.insert(1, "X")
+              ventastotales = ventastotales + 3000
+              comprador = int(
+                  input("ingrese su rut sin punto ni digito berificador"))
+              compradores.append(comprador)
+          elif depa4 == "C" or depa4 == "c":
+            if departamento4[2] == "X":
+              print("departamento ya comprado")
+              print(departamento4)
+            else:
+              print("departamento comprado con exito")
+              departamento4.pop(2)
+              departamento4.insert(2, "X")
+              print(departamento4)
+              ventastotales = ventastotales + 2800
+              comprador = int(
+                  input("ingrese su rut sin punto ni digito berificador"))
+              compradores.append(comprador)
+          elif depa4 == "D" or depa4 == "d":
+            if departamento4[3] == "X":
+              print("departamento ya comprado")
+              print(departamento4)
+            else:
+              print("departamento comprado con exito")
+              departamento4.pop(3)
+              departamento4.insert(3, "X")
+              print(departamento4)
+              ventastotales = ventastotales + 3500
+              comprador = int(
+                  input("ingrese su rut sin punto ni digito berificador"))
+              compradores.append(comprador)
+          else:
+            print("valor no valido, intentelo otra vez")
+        elif piso == 5:
+          depa5 = str(input("ingrese la clase de departamento"))
+          if depa5 == "A" or depa5 == "a":
+            if departamento5[0] == "X":
+              print("departamento ya comprado")
+              print(departamento5)
+            else:
+              print("departamento comprado con exito")
+              departamento5.pop(0)
+              departamento5.insert(0, "X")
+              print(departamento5)
+              ventastotales = ventastotales + 38000
+              comprador = int(
+                  input("ingrese su rut sin punto ni digito berificador"))
+              compradores.append(comprador)
+          elif depa5 == "B" or depa5 == "b":
+            if departamento5[1] == "X":
+              print("departamento ya comprado")
+              print(departamento5)
+            else:
+              print("departamento comprado con exito")
+              departamento5.pop(1)
+              departamento5.insert(1, "X")
+              ventastotales = ventastotales + 3000
+              comprador = int(
+                  input("ingrese su rut sin punto ni digito berificador"))
+              compradores.append(comprador)
+          elif depa5 == "C" or depa5 == "c":
+            if departamento5[2] == "X":
+              print("departamento ya comprado")
+              print(departamento5)
+            else:
+              print("departamento comprado con exito")
+              departamento5.pop(2)
+              departamento5.insert(2, "X")
+              print(departamento5)
+              ventastotales = ventastotales + 2800
+              comprador = int(
+                  input("ingrese su rut sin punto ni digito berificador"))
+              compradores.append(comprador)
+          elif depa5 == "D" or depa5 == "d":
+            if departamento5[3] == "X":
+              print("departamento ya comprado")
+              print(departamento5)
+            else:
+              print("departamento comprado con exito")
+              departamento5.pop(3)
+              departamento5.insert(3, "X")
+              print(departamento5)
+              ventastotales = ventastotales + 3500
+              comprador = int(
+                  input("ingrese su rut sin punto ni digito berificador"))
+              compradores.append(comprador)
+          else:
+            print("valor no valido, intentelo otra vez")
+        elif piso == 6:
+          depa6 = str(input("ingrese la clase de departamento"))
+          if depa6 == "A" or depa6 == "a":
+            if departamento6[0] == "X":
+              print("departamento ya comprado")
+              print(departamento6)
+            else:
+              print("departamento comprado con exito")
+              departamento6.pop(0)
+              departamento6.insert(0, "X")
+              print(departamento6)
+              ventastotales = ventastotales + 38000
+              comprador = int(
+                  input("ingrese su rut sin punto ni digito berificador"))
+              compradores.append(comprador)
+          elif depa6 == "B" or depa6 == "B":
+            if departamento6[1] == "X":
+              print("departamento ya comprado")
+              print(departamento6)
+            else:
+              print("departamento comprado con exito")
+              departamento6.pop(1)
+              departamento6.insert(1, "X")
+              ventastotales = ventastotales + 3000
+              comprador = int(
+                  input("ingrese su rut sin punto ni digito berificador"))
+              compradores.append(comprador)
+          elif depa6 == "C" or depa6 == "c":
+            if departamento6[2] == "X":
+              print("departamento ya comprado")
+              print(departamento6)
+            else:
+              print("departamento comprado con exito")
+              departamento6.pop(2)
+              departamento6.insert(2, "X")
+              print(departamento6)
+              ventastotales = ventastotales + 2800
+              comprador = int(
+                  input("ingrese su rut sin punto ni digito berificador"))
+              compradores.append(comprador)
+          elif depa6 == "D" or depa6 == "d":
+            if departamento6[3] == "X":
+              print("departamento ya comprado")
+              print(departamento6)
+            else:
+              print("departamento comprado con exito")
+              departamento6.pop(3)
+              departamento6.insert(3, "X")
+              print(departamento6)
+              ventastotales = ventastotales + 3500
+              comprador = int(
+                  input("ingrese su rut sin punto ni digito berificador"))
+              compradores.append(comprador)
+          else:
+            print("valor no valido, intentelo otra vez")
+        elif piso == 7:
+          depa7 = str(input("ingrese la clase de departamento"))
+          if depa7 == "A" or depa7 == "a":
+            if departamento7[0] == "X":
+              print("departamento ya comprado")
+              print(departamento7)
+            else:
+              print("departamento comprado con exito")
+              departamento7.pop(0)
+              departamento7.insert(0, "X")
+              print(departamento7)
+              ventastotales = ventastotales + 38000
+              comprador = int(
+                  input("ingrese su rut sin punto ni digito berificador"))
+              compradores.append(comprador)
+          elif depa7 == "B" or depa7 == "b":
+            if departamento7[1] == "X":
+              print("departamento ya comprado")
+              print(departamento7)
+            else:
+              print("departamento comprado con exito")
+              departamento7.pop(1)
+              departamento7.insert(1, "X")
+              ventastotales = ventastotales + 3000
+              comprador = int(
+                  input("ingrese su rut sin punto ni digito berificador"))
+              compradores.append(comprador)
+          elif depa7 == "C" or depa7 == "c":
+            if departamento7[2] == "X":
+              print("departamento ya comprado")
+              print(departamento7)
+            else:
+              print("departamento comprado con exito")
+              departamento7.pop(2)
+              departamento7.insert(2, "X")
+              print(departamento7)
+              ventastotales = ventastotales + 2800
+              comprador = int(
+                  input("ingrese su rut sin punto ni digito berificador"))
+              compradores.append(comprador)
+          elif depa7 == "D" or depa7 == "d":
+            if departamento7[3] == "X":
+              print("departamento ya comprado")
+              print(departamento7)
+            else:
+              print("departamento comprado con exito")
+              departamento7.pop(3)
+              departamento7.insert(3, "X")
+              print(departamento7)
+              ventastotales = ventastotales + 3500
+              comprador = int(
+                  input("ingrese su rut sin punto ni digito berificador"))
+              compradores.append(comprador)
+          else:
+            print("valor no valido, intentelo otra vez")
+        elif piso == 8:
+          depa8 = str(input("ingrese la clase de departamento"))
+          if depa8 == "A" or depa8 == "a":
+            if departamento8[0] == "X":
+              print("departamento ya comprado")
+              print(departamento8)
+            else:
+              print("departamento comprado con exito")
+              departamento8.pop(0)
+              departamento8.insert(0, "X")
+              print(departamento8)
+              ventastotales = ventastotales + 38000
+              comprador = int(
+                  input("ingrese su rut sin punto ni digito berificador"))
+              compradores.append(comprador)
+          elif depa8 == "B" or depa8 == "b":
+            if departamento8[1] == "X":
+              print("departamento ya comprado")
+              print(departamento8)
+            else:
+              print("departamento comprado con exito")
+              departamento8.pop(1)
+              departamento8.insert(1, "X")
+              ventastotales = ventastotales + 3000
+              comprador = int(
+                  input("ingrese su rut sin punto ni digito berificador"))
+              compradores.append(comprador)
+          elif depa8 == "C" or depa8 == "c":
+            if departamento8[2] == "X":
+              print("departamento ya comprado")
+              print(departamento8)
+            else:
+              print("departamento comprado con exito")
+              departamento8.pop(2)
+              departamento8.insert(2, "X")
+              print(departamento8)
+              ventastotales = ventastotales + 2800
+              comprador = int(
+                  input("ingrese su rut sin punto ni digito berificador"))
+              compradores.append(comprador)
+          elif depa8 == "D" or depa8 == "d":
+            if departamento8[3] == "X":
+              print("departamento ya comprado")
+              print(departamento8)
+            else:
+              print("departamento comprado con exito")
+              departamento8.pop(3)
+              departamento8.insert(3, "X")
+              print(departamento8)
+              ventastotales = ventastotales + 3500
+              comprador = int(
+                  input("ingrese su rut sin punto ni digito berificador"))
+              compradores.append(comprador)
+          else:
+            print("valor no valido, intentelo otra vez")
+        elif piso == 9:
+          depa9 = str(input("ingrese la clase de departamento"))
+          if depa9 == "A" or depa9 == "a":
+            if departamento9[0] == "X":
+              print("departamento ya comprado")
+              print(departamento9)
+            else:
+              print("departamento comprado con exito")
+              departamento9.pop(0)
+              departamento9.insert(0, "X")
+              print(departamento9)
+              ventastotales = ventastotales + 38000
+              comprador = int(
+                  input("ingrese su rut sin punto ni digito berificador"))
+              compradores.append(comprador)
+          elif depa9 == "B" or depa9 == "B":
+            if departamento9[1] == "X":
+              print("departamento ya comprado")
+              print(departamento9)
+            else:
+              print("departamento comprado con exito")
+              departamento9.pop(1)
+              departamento9.insert(1, "X")
+              ventastotales = ventastotales + 3000
+              comprador = int(
+                  input("ingrese su rut sin punto ni digito berificador"))
+              compradores.append(comprador)
+          elif depa9 == "C" or depa9 == "c":
+            if departamento9[2] == "X":
+              print("departamento ya comprado")
+              print(departamento9)
+            else:
+              print("departamento comprado con exito")
+              departamento9.pop(2)
+              departamento9.insert(2, "X")
+              print(departamento9)
+              ventastotales = ventastotales + 2800
+              comprador = int(
+                  input("ingrese su rut sin punto ni digito berificador"))
+              compradores.append(comprador)
+          elif depa9 == "D" or depa9 == "d":
+            if departamento9[3] == "X":
+              print("departamento ya comprado")
+              print(departamento9)
+            else:
+              print("departamento comprado con exito")
+              departamento9.pop(3)
+              departamento9.insert(3, "X")
+              print(departamento9)
+              ventastotales = ventastotales + 3500
+              comprador = int(
+                  input("ingrese su rut sin punto ni digito berificador"))
+              compradores.append(comprador)
+          else:
+            print("valor no valido, intentelo otra vez")
+        elif piso == 10:
+          depa10 = str(input("ingrese la clase de departamento"))
+          if depa10 == "A" or depa10 == "a":
+            if departamento10[0] == "X":
+              print("departamento ya comprado")
+              print(departamento10)
+            else:
+              print("departamento comprado con exito")
+              departamento10.pop(0)
+              departamento10.insert(0, "X")
+              print(departamento10)
+              ventastotales = ventastotales + 38000
+              comprador = int(
+                  input("ingrese su rut sin punto ni digito berificador"))
+              compradores.append(comprador)
+          elif depa10 == "B" or depa10 == "b":
+            if departamento10[1] == "X":
+              print("departamento ya comprado")
+              print(departamento10)
+            else:
+              print("departamento comprado con exito")
+              departamento10.pop(1)
+              departamento10.insert(1, "X")
+              ventastotales = ventastotales + 3000
+              comprador = int(
+                  input("ingrese su rut sin punto ni digito berificador"))
+              compradores.append(comprador)
+          elif depa10 == "C" or depa10 == "c":
+            if departamento10[2] == "X":
+              print("departamento ya comprado")
+              print(departamento10)
+            else:
+              print("departamento comprado con exito")
+              departamento10.pop(2)
+              departamento10.insert(2, "X")
+              print(departamento10)
+              ventastotales = ventastotales + 2800
+              comprador = int(
+                  input("ingrese su rut sin punto ni digito berificador"))
+              compradores.append(comprador)
+          elif depa10 == "D" or depa10 == "d":
+            if departamento10[3] == "X":
+              print("departamento ya comprado")
+              print(departamento10)
+            else:
+              print("departamento comprado con exito")
+              departamento10.pop(3)
+              departamento10.insert(3, "X")
+              print(departamento10)
+              ventastotales = ventastotales + 3500
+              comprador = int(
+                  input("ingrese su rut sin punto ni digito berificador"))
+              compradores.append(comprador)
+          else:
+            print("valor no valido, intentelo otra vez")
+        else:
+          print("ERROR: seleccion elegida no valida para mostrar")
+      elif choice == 2:
+        print(departamento1)
+        print(departamento2)
+        print(departamento3)
+        print(departamento4)
+        print(departamento5)
+        print(departamento6)
+        print(departamento7)
+        print(departamento8)
+        print(departamento9)
+        print(departamento10)
+      elif choice == 3:
+        compradores.sort()
+        print(f"la lista de compradores es"{compradores})
+      elif choice == 4:
+        print(ventastotales)
+        print("UF")
+      elif choice == 5:
+        print("muchas gracias por usar nuestro programa que tenga un excelente día")
+        print("benjamín Soto, 21063320-0")
+        break
+      else:
+        print("opcion invallida, seleccione una opcion dentro del menú")
+
+    except ValueError:
+      print("error fatal de valores, porfavor reinicie el programa")
+
+
+departamento1 = ["A", "B", "C", "D"]
+departamento2 = ["A", "B", "C", "D"]
+departamento3 = ["A", "B", "C", "D"]
+departamento4 = ["A", "B", "C", "D"]
+departamento5 = ["A", "B", "C", "D"]
+departamento6 = ["A", "B", "C", "D"]
+departamento7 = ["A", "B", "C", "D"]
+departamento8 = ["A", "B", "C", "D"]
+departamento9 = ["A", "B", "C", "D"]
+departamento10 = ["A", "B", "C", "D"]
+menu()
